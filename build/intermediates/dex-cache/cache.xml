@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\bea0e1968d1fb48e37c5cbd990493cdd98fd77b6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_3922f6fe89f9839624e4b8e31d1e02f6fceebb1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\CapstoneProject\UniversityPrerequisiteChecking\jtds-1.2.7\jtds-1.2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47f9b00937707c328eccbcdd38867a799ea91b44">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\jtds-1.2.7_0d019338f921ac0d068346ef248ae2b9119959db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\f24992742f976ddc390d0ba3d36fa8c0c1f86f1b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_3213695a5d174c6835f305459e249eb2b4260b0c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\406169e2fb5b3683a5ceb4385148011774ce610a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_859751718e6b4c9a448eea2794c4c0e075a05d74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\d2b49a6953b6109febf9999964f293996a783f14\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_68a29f09b609456f4b30a915376e1e9d28ef0286.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_9c383b73846b8d34c15c051ce39ce42aadb33422.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\84fb12c63c272f60e6b3e8eb44d8620c106db3ac\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_d1b8dbb5183934fdc27acbf0f05b0849f10525cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\b4a5d665c69c92814fae981a4f473642286e3270\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_3c5bfe5d02ed76e21f27e22ee46c250a95004184.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\240af966e35788fb07de1b13b055eba252c6dfcf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_86a99464fce04ae5c4da2690d015b003c74a202d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_58a18143a55698d2222c8492f973c679a6534098.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\4592a6ad6d08ceb5811ba278e185d1c3efe58937\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_1becfacdbbe95304113101568574d4fefe8b260b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\e0d301661200d312097def985f8e24059b48989c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_498ed900497f64eae36848d0dd12ff2e7abd6726.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\2b13c0eddcf4561dadf2f9d192f51441ca0235b1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_dcd626601da16cb882694d48f998dfe11fa37d35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\0a4ec38c720f2c46599719ec9efcd063a2483766\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_b455a43973039626f6ea4198b8714df81a6d6ef5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\b6fc2f4a6cce2bb46f9486d85eec29cf5b79b433\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_9bf3596ba40281a2e43a4e955e5499b2f5e8ae07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Tamal\.android\build-cache\2b158a7ab34cc4803cf3c9fa5f6af945695a4d16\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="D:\CapstoneProject\UniversityPrerequisiteChecking\app\build\intermediates\pre-dexed\debug\classes_2b9ede884e850de01f434c704680be35351790f5.jar" />
+    </item>
+
+</items>
