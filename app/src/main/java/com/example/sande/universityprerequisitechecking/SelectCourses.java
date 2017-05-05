@@ -43,6 +43,12 @@ public class SelectCourses extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+
+        //set logo in action bar
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.ic_launcher);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
         setContentView(R.layout.activity_select_courses);
 
         submit = (Button) findViewById(R.id.Submit);
@@ -54,10 +60,10 @@ public class SelectCourses extends AppCompatActivity {
         registerForContextMenu(listView);
 
         // Declaring Server ip, username, database name and password
-        ip =  "malekse.database.windows.net:1433";
-        db =  "Course_prereq";
-        un =  "malekse";
-        pass = "Msis5133";
+        ip =  "tamalc.database.windows.net:1433";
+        db =  "tamal";
+        un =  "tamalc";
+        pass = "LDCaprio001";
         // Declaring Server ip, username, database name and password
 
         // Setting up the connection
@@ -92,16 +98,13 @@ public class SelectCourses extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.listViewCourse);
         if(item.getTitle().equals("Select")){
             //if delete task is selected
-            //arrayListToDo.remove(selectedIndex);
-            //arrayAdapterToDo.notifyDataSetChanged();
+
             String listItem = arrayListResult.get(selectedIndex);
             String[] values = listItem.split(" ");
             int Number = Integer.valueOf(values[1]);
             Toast.makeText(SelectCourses.this, "Number:" + Number, Toast.LENGTH_LONG).show();
             CreateTempTable();
             InsertintoTempTable(Number);
-            //info.targetView.setBackgroundColor(Color.GRAY);
-            //listView.getChildAt(selectedIndex).setBackgroundColor(Color.YELLOW);
 
 
         }
@@ -111,8 +114,6 @@ public class SelectCourses extends AppCompatActivity {
             int Number = Integer.valueOf(values[1]);
             Toast.makeText(SelectCourses.this, "Deselect Number:" + Number, Toast.LENGTH_LONG).show();
             DeleteFromTempTable(Number);
-            //info.targetView.setBackgroundColor(Color.TRANSPARENT);
-            //listView.getChildAt(selectedIndex).setBackgroundColor(Color.TRANSPARENT);
 
 
         }
@@ -123,8 +124,6 @@ public class SelectCourses extends AppCompatActivity {
 
     public void onSubmitButtonClicked(View v){
 
-        //CreateTempTable();
-        //InsertintoTempTable();
         Intent intent = new Intent(getApplicationContext(), view_source.class);
         startActivity(intent);
 
@@ -137,21 +136,13 @@ public class SelectCourses extends AppCompatActivity {
         String courseInfo = "";
 
 
-       /* protected void onPreExecute()
-        {
-            listView1.setVisibility(View.VISIBLE);
-        }*/
-
         @Override
         protected void onPostExecute(String r)
         {
-            //progressBar.setVisibility(View.GONE);
-            //Toast.makeText(SelectCourses.this, r, Toast.LENGTH_LONG).show();
+
             if(isSuccess)
             {
-                /*message = (TextView) findViewById(R.id.textView2);
-                message.setText(name1);*/
-                //arrayAdapterResult.add;
+
                 arrayAdapterResult.notifyDataSetChanged();
 
             }
@@ -171,7 +162,7 @@ public class SelectCourses extends AppCompatActivity {
                 {
                     // Change below query according to your own database.
                     String query = "select s.Alias, c.Number, c.Name from dbo.Course c, dbo.Subject s\n" +
-                            "where c.SubjectID = s.SubjectID and c.SubjectID = 90;";
+                            "where c.SubjectID = s.SubjectID and c.SubjectID IN (select Number from ListOfSubjects);";
                     Statement stmt = con.createStatement();
                     ResultSet rs = stmt.executeQuery(query);
                     while(rs.next())
@@ -179,9 +170,7 @@ public class SelectCourses extends AppCompatActivity {
                         courseInfo= rs.getString("Alias") + " " + rs.getString("Number") + " " + rs.getString("Name"); //Name is the string label of a column in database, read through the select query
                         z = "query successful";
                         isSuccess=true;
-                        //arrayAdapterResult.add(courseInfo);
                         arrayListResult.add(courseInfo);
-                        //con.close();
 
                     }
                     if(rs.isAfterLast())
@@ -215,7 +204,6 @@ public class SelectCourses extends AppCompatActivity {
         try {
             stmt = con.createStatement();
             stmt.executeUpdate(query);
-            //Toast.makeText(SelectCourses.this, "Temp Table Created", Toast.LENGTH_LONG).show();
             con.close();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -232,7 +220,6 @@ public class SelectCourses extends AppCompatActivity {
         try {
             stmt = con.createStatement();
             stmt.executeUpdate(query);
-            //Toast.makeText(SelectCourses.this, "courses inserted in Temp Table", Toast.LENGTH_LONG).show();
             con.close();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -243,13 +230,11 @@ public class SelectCourses extends AppCompatActivity {
 
     public void DeleteFromTempTable(int courseNumber){
         con = connectionclass();
-        //String query = "INSERT INTO ListOfCourses (Number) values(5303),(5213),(5123);";
-        String query = "DELETE FROM ListofCourses WHERE Number = courseNumber;";
+        String query = "DELETE FROM ListofCourses WHERE Number = " + courseNumber + ";";
         Statement stmt = null;
         try {
             stmt = con.createStatement();
             stmt.executeUpdate(query);
-            //Toast.makeText(SelectCourses.this, "course deleted from Temp Table", Toast.LENGTH_LONG).show();
             con.close();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -268,7 +253,7 @@ public class SelectCourses extends AppCompatActivity {
         {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
             //your database connection string goes below
-            ConnectionURL = "jdbc:jtds:sqlserver://malekse.database.windows.net:1433;DatabaseName=Course_prereq;user=malekse@malekse;password=Msis5133;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+            ConnectionURL = "jdbc:jtds:sqlserver://tamalc.database.windows.net:1433;DatabaseName=tamal;user=tamalc@tamalc;password=LDCaprio001;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
             connection = DriverManager.getConnection(ConnectionURL);
         }
         catch (SQLException se)

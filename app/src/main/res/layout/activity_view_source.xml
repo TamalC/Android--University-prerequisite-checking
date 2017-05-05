@@ -20,9 +20,12 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:background="@android:color/holo_green_light"
             android:gravity="center_vertical"
             android:text="Courses Available"
-            android:textColor="@android:color/holo_green_light" />
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <ListView
             android:id="@+id/ListViewAvailable"
@@ -33,17 +36,24 @@
             android:id="@+id/CoursesUnv"
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:background="@android:color/holo_red_light"
             android:gravity="center_vertical"
             android:text="Courses Unavailable"
-            android:textColor="@android:color/holo_red_light" />
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:background="@android:color/holo_red_light"
             android:gravity="center_vertical"
-            android:text="Course        Prerequisite"
-            android:textColor="@android:color/holo_red_light" />
+            android:text="Course / Prerequisite"
+            android:textColor="@android:color/black"
+            android:textColorLink="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <ListView
             android:id="@+id/ListViewUnavailable"

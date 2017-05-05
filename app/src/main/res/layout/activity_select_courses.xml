@@ -19,12 +19,24 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp">
+            tools:layout_editor_absoluteY="8dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center_vertical"
+                android:text="Select Courses"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <ListView
                 android:id="@+id/listViewCourse"
                 android:layout_width="match_parent"
-                android:layout_height="428dp"
+                android:layout_height="381dp"
                 android:layout_marginBottom="24dp"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="24dp" />
@@ -32,9 +44,11 @@
             <Button
                 android:id="@+id/Submit"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:onClick="onSubmitButtonClicked"
-                android:text="Submit" />
+                android:text="Submit"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.25" />
 
         </LinearLayout>
 
